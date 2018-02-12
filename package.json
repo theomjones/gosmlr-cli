@@ -1,6 +1,15 @@
 {
   "name": "gosmlr",
   "description": "A tiny CLI for shortening urls with gomslr.xyz",
+  "author": {
+    "name": "Theo Messenger-Jones",
+    "email": "theomjones@gmail.com",
+    "url": "https://theomjones.com"
+  },
+  "repository" :
+    { "type" : "git",
+      "url" : "https://github.com/theomjones/gosmlr-cli"
+  },
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",

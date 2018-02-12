@@ -7,7 +7,6 @@ const chalk = require('chalk')
 
 program
     .action(url => {
-        console.log('Getting...', JSON.stringify({ url }))
         axios.post('https://gosmlr.xyz', { url })
         .then(res => {
             return res.data
