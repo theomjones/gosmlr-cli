@@ -1,14 +1,14 @@
 {
   "name": "gosmlr",
-  "description": "Command line app for shortening urls with gomslr.xyz",
+  "description": "A tiny CLI for shortening urls with gomslr.xyz",
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.17.1",
     "chalk": "^2.3.0",
     "commander": "^2.14.1",
-    "copy-paste": "^1.3.0",
-    "node-fetch": "^2.0.0"
+    "copy-paste": "^1.3.0"
   },
   "preferGlobal": true,
   "bin": "./index.js"

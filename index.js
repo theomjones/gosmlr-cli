@@ -1,37 +1,29 @@
 #!/usr/bin/env node
 
 const program = require('commander')
-const fetch = require('node-fetch')
+const axios = require('axios')
 const ncp = require('copy-paste')
 const chalk = require('chalk')
 
 program
-    .option('-t, --total', 'Get total urls shortened')
     .action(url => {
-        fetch('https://gosmlr.xyz', { method: 'POST', body: JSON.stringify({ url }) })
-        .then(res => res.json())
+        console.log('Getting...', JSON.stringify({ url }))
+        axios.post('https://gosmlr.xyz', { url })
+        .then(res => {
+            return res.data
+        })
         .then(json => {
             ncp.copy(json.shortUrl)
-            console.log(`\n${chalk.green(json.shortUrl)} was copied to your clipboard! 🕸`)
-            if (program.total) {
-                fetch('https://gosmlr.xyz')
-                .then((res) => {
-                    return res.json()
-                })
-                .then((json) => {
-                    console.log('Total urls Shortened:', chalk.blue(json.total))
-                })
-                .catch((e) => {
-                    console.log('Could not fetch total.', e)
-                })
-            }
+            
+            console.log(`\n${chalk.green(json.shortUrl)} was copied to your clipboard! 🐶`)
+            console.log(chalk.blue(json.count) + ' urls have been made smaller!')
         })
         .catch((e) => {
             if (e.code === "ENOTFOUND") {
                 console.log(chalk.red("\nWe could not process your request.\n"))
                 console.log(e.message)
             } else {
-                console.log(e.FetchError)
+                console.log(e)
             }
         })
         console.log('')
