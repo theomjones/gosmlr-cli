@@ -1,6 +1,6 @@
 {
   "name": "gosmlr",
-  "description": "A tiny CLI for shortening urls with gomslr.xyz",
+  "description": "A tiny CLI for tiny urls with gomslr.xyz",
   "author": {
     "name": "Theo M Jones",
     "email": "theomjones@gmail.com",

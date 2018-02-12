@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 const program = require('commander')
 const axios = require('axios')
 const ncp = require('copy-paste')
