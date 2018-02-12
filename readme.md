@@ -1,6 +1,6 @@
 # gosmlr
 
-A tiny command-line interface for [gosmlr.xyz](https://s3.eu-west-2.amazonaws.com/theomjonesimg/Screen+Shot+2018-02-12+at+19.18.35.png) – a url shortening micro service.
+A tiny command-line interface for [gosmlr.xyz](https://gosmlr.xyz) – a url shortening micro service.
 
 ## Installation
 
