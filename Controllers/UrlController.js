@@ -8,7 +8,7 @@ module.exports = {
         console.log(chalk.cyan('\nYour recent links'))
         console.log('-----------------\n')
         urls.forEach((url, i) => {
-            console.log(`${chalk.blue('http://' + url.shortUrl)} -- ${chalk.magenta('http://' + url.longUrl)}`)
+            console.log(`${chalk.blue('https://' + url.shortUrl)} -- ${chalk.magenta('http://' + url.longUrl)}`)
         })
     },
     add (urlObj) {
