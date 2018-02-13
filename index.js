@@ -6,13 +6,16 @@ const ncp = require('copy-paste')
 const chalk = require('chalk')
 const urlController = require('./Controllers/UrlController')
 
+const regex = /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/gm
 
 program
-    .option('-l --list', 'List your recent links.')
-    .option('-C --clear')
+    .option('-l --list', '<long_url> [--list] --- List your recent urls.', program)
+    .option('-C --clear', 'list [--clear] --- Clear your recent urls.')
 
 program
+    .version('0.2.2')
     .action(url => {
+        if (url.search(regex) !== 0) {return console.log('\nERROR: ' + chalk.magenta(url) + chalk.red(' is not a valid url.'))}
         axios.post('https://gosmlr.xyz', { url })
         .then(res => {
             return res.data
@@ -40,6 +43,7 @@ program
 
 program
     .command('list')
+    .option('-C --clear')
     .action(() => {
         if (program.clear) {
             urlController.clear()
