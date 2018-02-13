@@ -13,7 +13,7 @@ program
     .option('-C --clear', 'list [--clear] --- Clear your recent urls.')
 
 program
-    .version('0.2.2')
+    .version('0.2.3')
     .action(url => {
         if (url.search(regex) !== 0) {return console.log('\nERROR: ' + chalk.magenta(url) + chalk.red(' is not a valid url.'))}
         axios.post('https://gosmlr.xyz', { url })
