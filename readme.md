@@ -1,7 +1,6 @@
 # gosmlr
 
 [![npm version](https://badge.fury.io/js/gosmlr.svg)](https://badge.fury.io/js/gosmlr)
-![HitCount](http://hits.dwyl.io/theomjones/gosmlr-cli.svg)](http://hits.dwyl.io/theomjones/gosmlr-cli)
 ![Dependencies](https://david-dm.org/theomjones/gosmlr-cli.svg)
 
 
