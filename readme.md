@@ -4,17 +4,23 @@ A tiny command-line interface for [gosmlr.xyz](https://gosmlr.xyz) – a url sho
 
 ## Installation
 
+``` bash
     npm install gosmlr -g
+```
 
 Or...
 
-    yarn global add gosmlr
+``` bash
+yarn global add gosmlr
+```
 
 ## Usage
 
 Simply pass in your long url as an argument to the `gosmlr` command:
 
-    gosmlr your-reallyl-long-url.com/long-urls/feb-18/3487789
+``` bash
+gosmlr your-reallyl-long-url.com/long-urls/feb-18/3487789
+```
 
 It accepts urls with or without the protocol.
 
