@@ -13,5 +13,4 @@ test('basic controller tests', async () => {
     count: '2',
     longUrl: testUrl
   })
-
 })

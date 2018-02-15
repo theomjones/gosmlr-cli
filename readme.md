@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/gosmlr.svg)](https://badge.fury.io/js/gosmlr)
 ![Dependencies](https://david-dm.org/theomjones/gosmlr-cli.svg)
+[![Build Status](https://travis-ci.org/theomjones/gosmlr-cli.svg?branch=master)](https://travis-ci.org/theomjones/gosmlr-cli)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
