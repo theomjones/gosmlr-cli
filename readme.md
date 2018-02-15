@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/gosmlr.svg)](https://badge.fury.io/js/gosmlr)
 ![Dependencies](https://david-dm.org/theomjones/gosmlr-cli.svg)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
-[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
 A tiny command-line interface for [gosmlr.xyz](https://gosmlr.xyz) – a url shortening micro service.
