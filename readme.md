@@ -47,4 +47,4 @@ gosmlr list # Prints a list of your most recent urls.
 gosmlr list --clear # Clears your recents list.
 ```
 
-![Hyper screenshot](https://theomjonesimg.s3.amazonaws.com/screencap.png)
+![Hyper screenshot](https://i.imgur.com/WtVL3FO.png)
