@@ -7,7 +7,7 @@ program
   .option('-v --verbose', 'Verbose error messages')
 
 program
-  .version('0.4.0')
+  .version('0.4.1')
   .action(async (input) => {
     try {
       const url = new Url(input)
